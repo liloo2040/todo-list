@@ -6,6 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
     <p>
       {{ todoItem.title }}
     </p>
+    <button class="btn btn-red" (click)="removeItem()">
   `,
   styleUrls: ['./item.component.css']
 })
