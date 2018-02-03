@@ -5,8 +5,9 @@ import { Component } from '@angular/core';
   template: `<h1>{{title}}</h1>
   <todo-input></todo-input>
   <ul>
-  <li *ngFor="let item of todoList">
-  {{ item.title }}</li>
+    <li *ngFor="let item of todoList">
+      <todo-item [todoItem]="item"></todo-item>
+    </li>
   </ul>`,
   styleUrls: ['./app.component.css']
 })
