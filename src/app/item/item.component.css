@@ -11,6 +11,10 @@
     flex-shrink: 0;
     margin: auto 1ex auto 0;
   }
+
+  .todo-complete {
+    text-decoration: line-through;
+  }
   
   .todo-title {
     flex-grow: 1;
