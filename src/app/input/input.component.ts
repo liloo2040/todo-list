@@ -6,9 +6,11 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
     <p>
       input works!
     </p>
-    <input [value]="title" 
-    (keyup.enter)="changeTitle(inputElement)" #inputElement>
-    <button (click)="changeTitle(inputElement)">Save</button>
+    <div>
+      <input [value]="title" 
+      (keyup.enter)="changeTitle(inputElement)" #inputElement>
+      <button (click)="changeTitle(inputElement)">Save</button>
+    </div>
     <p>The title is: {{ title }}</p>
   `,
   styleUrls: ['./input.component.css']
